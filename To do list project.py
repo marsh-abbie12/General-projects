@@ -1,15 +1,14 @@
 #This is the backend for a to do list app
 #Initialise list to store tasks and functions to add and remove tasks
 tasks=[] #initialise an empty list to store tasks
-def add_task(task):
-    #Add a task to the tasks list
-    tasks.append(task)
+def add_task(task): #Add a task to the tasks list
+  
+    tasks.append(task) 
     return f'Task "{task}" added to the list.'
-def remove_task(task):
+def remove_task(task): #Remove a task from the tasks list
     tasks.remove(task)
     return f'Task "{task}" removed from the list.'
-    #Remove a task from the tasks list
-
+    
 #main programme loop
 print("Welcome to the To-DO List App!")
 print("You can add tasks, remove tasks, and view your current list of tasks.")
@@ -36,3 +35,4 @@ while True:
     elif task=="exit":
         print("Exiting the To-DO List App. Goodbye!")
         break
+    
